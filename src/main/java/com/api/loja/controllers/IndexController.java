@@ -16,7 +16,7 @@ public class IndexController {
     @GetMapping
     ResponseEntity menuInicial(){
         Map<String, String> menu = new LinkedHashMap();
-        menu.put("Clientes: ", "/clientes");
+        menu.put("Funcionarios: ", "/funcionarios");
         menu.put("Produtos: ", "/produtos");
         menu.put("Dica: ", "Para acessar um recurso use o hyperlink");
         return ResponseEntity.status(HttpStatus.OK).body(menu);
